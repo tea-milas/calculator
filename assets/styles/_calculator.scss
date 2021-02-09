@@ -1,0 +1,89 @@
+@import './_variables.scss';
+
+
+#calculator {
+    position: relative;
+    z-index: 10;
+    margin: 15vh auto;
+    width: 400px;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    background-color: $midnight-blue;
+    border: 1px solid $midnight-blue;
+    border-radius: 20px;
+
+
+    #calculator__screen {
+        position: relative;
+        background-color: $lighter-midnight;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+        #calculator__screen__input {
+            position: absolute;
+            bottom: 75px;
+            right: 0;
+            margin-right: 10px;
+        }
+
+        #calculator__screen__result {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            margin-right: 10px;
+        }
+    }
+
+    #calculator__input {
+        margin: 15px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 8px;
+    
+        button {
+            border-radius: 70px;
+            color: $burnt-orange;
+        }
+
+        button:active {
+            transform: scale(.9);
+        }
+
+        .button__operators {
+            background-color: $darker-midnight;  
+            border: 1px solid $darker-midnight-shadow;
+            box-shadow: 1px -1px 4px 1px $darker-midnight-shadow;
+        }
+
+        .button__numbers {
+            background-color: $medium-midnight;
+            border: 1px solid $lighter-midnight;
+            box-shadow: 1px -1px 4px 1px $lighter-midnight;
+        }
+        
+        .button__operators:hover , .button__numbers:hover {
+            background-color: $burnt-orange;  
+            border: 1px solid $burnt-orange;
+            box-shadow: 1px -1px 4px 1px $burnt-orange;
+            color: $beige;
+        }
+    
+    }
+}
+
+#equals {
+    grid-column-start:5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+#zero {
+    grid-column-start:1;
+    grid-column-end: 4;
+    width: 100%;
+   
+}
+
+

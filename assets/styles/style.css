@@ -1,0 +1,257 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #020607;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3, h4, h5 {
+  color: #020607a8;
+  font-size: 30px;
+}
+
+h6, p {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #020607;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3, h4, h5 {
+  color: #020607a8;
+  font-size: 30px;
+}
+
+h6, p {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: beige;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #020607;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3, h4, h5 {
+  color: #020607a8;
+  font-size: 30px;
+}
+
+h6, p {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+#calculator {
+  position: relative;
+  z-index: 10;
+  margin: 15vh auto;
+  width: 400px;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #003366;
+  border: 1px solid #003366;
+  border-radius: 20px;
+}
+#calculator #calculator__screen {
+  position: relative;
+  background-color: #11406f;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+#calculator #calculator__screen #calculator__screen__input {
+  position: absolute;
+  bottom: 75px;
+  right: 0;
+  margin-right: 10px;
+}
+#calculator #calculator__screen #calculator__screen__result {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
+}
+#calculator #calculator__input {
+  margin: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 8px;
+}
+#calculator #calculator__input button {
+  border-radius: 70px;
+  color: #CC3300;
+}
+#calculator #calculator__input button:active {
+  transform: scale(0.9);
+}
+#calculator #calculator__input .button__operators {
+  background-color: #01274e;
+  border: 1px solid #012240;
+  box-shadow: 1px -1px 4px 1px #012240;
+}
+#calculator #calculator__input .button__numbers {
+  background-color: #013263;
+  border: 1px solid #11406f;
+  box-shadow: 1px -1px 4px 1px #11406f;
+}
+#calculator #calculator__input .button__operators:hover, #calculator #calculator__input .button__numbers:hover {
+  background-color: #CC3300;
+  border: 1px solid #CC3300;
+  box-shadow: 1px -1px 4px 1px #CC3300;
+  color: beige;
+}
+
+#equals {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+}
+
+#zero {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 100%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  color: #020607;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 45px;
+}
+
+h3, h4, h5 {
+  color: #020607a8;
+  font-size: 30px;
+}
+
+h6, p {
+  font-size: 20px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+}
+
+#blob__background {
+  z-index: 1;
+  max-height: 97vh;
+  max-width: 97vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#blob__background .blob {
+  position: absolute;
+  z-index: 1;
+  width: auto;
+  animation: move 30s ease-in-out infinite;
+}
+#blob__background #blob1 {
+  height: 750px;
+  top: -20%;
+  left: -18%;
+}
+#blob__background #blob2 {
+  height: 750px;
+  bottom: -37%;
+  right: 0;
+}
+#blob__background #blob3 {
+  height: 400px;
+  top: 0;
+  right: 8%;
+}
+#blob__background #blob4 {
+  height: 300px;
+  bottom: -10%;
+  left: 23%;
+}
+#blob__background #blob5 {
+  height: 310px;
+  top: 2%;
+  right: -15%;
+}
+#blob__background #blob6 {
+  height: 500px;
+  top: 40%;
+  left: 0;
+}
+#blob__background #blob7 {
+  height: 250px;
+  top: 38%;
+  right: 0;
+}
+#blob__background #blob8 {
+  height: 400px;
+  top: -5%;
+  left: 23%;
+}
+
+@keyframes move {
+  from {
+    transform: scale(1) translate(0, 0);
+  }
+  50% {
+    transform: scale(1.2) translate(30px, -10px);
+  }
+  to {
+    transform: scale(1) translate(0, 0);
+  }
+}

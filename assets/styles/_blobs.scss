@@ -1,0 +1,70 @@
+@import './_variables.scss';
+
+#blob__background {
+    z-index: 1;
+    max-height: 97vh;
+    max-width: 97vw;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    .blob {
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        animation: move 30s ease-in-out infinite;
+    }
+    #blob1 {
+        height: 750px;
+        top: -20%;
+        left: -18%;
+    }
+    #blob2 {
+        height: 750px;
+        bottom: -37%;
+        right: 0;
+    }
+    #blob3 {
+        height: 400px;
+        top: 0;
+        right: 8%;
+    }
+    #blob4 {
+        height: 300px;
+        bottom: -10%;
+        left: 23%;
+    }
+    #blob5 {
+        height: 310px;
+        top: 2%;
+        right: -15%;
+    }
+    #blob6 {
+        height: 500px;
+        top: 40%;
+        left: 0;
+    }
+    #blob7 {
+        height: 250px;
+        top: 38%;
+        right: 0;
+    }
+    #blob8 {
+        height: 400px;
+        top: -5%;
+        left: 23%;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: scale(1) translate(0, 0);
+    }
+    50% {
+        transform: scale(1.2) translate(30px, -10px);
+    }
+    to {transform: scale(1) translate(0,0);}
+
+}

@@ -1,0 +1,42 @@
+$midnight-blue : #003366;
+$lighter-midnight : #11406f;
+$medium-midnight : #013263;
+$darker-midnight : #01274e;
+$darker-midnight-shadow: #012240;
+$lighter-blue : #195b70;
+$burnt-orange : #CC3300;
+$redish : #b30f00;
+$dark : #020607;
+$dark-opaque : #020607a8;
+$beige : beige;
+
+$font-L : 60px;
+$font-M : 45px;
+$font-S : 30px;
+$font-XS : 20px;
+
+$font : 'Poppins', sans-serif;
+
+body {
+    font-family: $font;
+}
+
+h1 {
+    color: $dark;
+    font-size: $font-L;
+}
+
+h2 {
+    font-size: $font-M;
+}
+
+h3,h4,h5 {
+    color: $dark-opaque;
+    font-size: $font-S;
+}
+
+h6,p {
+    font-size: $font-XS;
+}
+
+button {font-family: $font;}
