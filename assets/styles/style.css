@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #020607;
+  color: #CC3300;
   font-size: 60px;
 }
 
@@ -29,7 +29,7 @@ body {
 }
 
 h1 {
-  color: #020607;
+  color: #CC3300;
   font-size: 60px;
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 h1 {
-  color: #020607;
+  color: #CC3300;
   font-size: 60px;
 }
 
@@ -106,7 +106,7 @@ button {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-#calculator #calculator__screen #calculator__screen__input {
+#calculator #calculator__screen #calculator__previous-operand {
   position: absolute;
   bottom: 75px;
   right: 0;
@@ -131,7 +131,7 @@ button {
 #calculator #calculator__input button:active {
   transform: scale(0.9);
 }
-#calculator #calculator__input .button__operators {
+#calculator #calculator__input .button__operators, #calculator #calculator__input .button__num-operators {
   background-color: #01274e;
   border: 1px solid #012240;
   box-shadow: 1px -1px 4px 1px #012240;
@@ -141,7 +141,7 @@ button {
   border: 1px solid #11406f;
   box-shadow: 1px -1px 4px 1px #11406f;
 }
-#calculator #calculator__input .button__operators:hover, #calculator #calculator__input .button__numbers:hover {
+#calculator #calculator__input .button__operators:hover, #calculator #calculator__input .button__numbers:hover, #calculator #calculator__input .button__num-operators:hover {
   background-color: #CC3300;
   border: 1px solid #CC3300;
   box-shadow: 1px -1px 4px 1px #CC3300;
@@ -155,7 +155,7 @@ button {
   grid-row-end: 6;
 }
 
-#zero {
+.zero {
   grid-column-start: 1;
   grid-column-end: 4;
   width: 100%;
@@ -166,7 +166,7 @@ body {
 }
 
 h1 {
-  color: #020607;
+  color: #CC3300;
   font-size: 60px;
 }
 

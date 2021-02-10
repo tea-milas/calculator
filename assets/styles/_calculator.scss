@@ -21,7 +21,7 @@
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
 
-        #calculator__screen__input {
+        #calculator__previous-operand {
             position: absolute;
             bottom: 75px;
             right: 0;
@@ -51,7 +51,7 @@
             transform: scale(.9);
         }
 
-        .button__operators {
+        .button__operators , .button__num-operators {
             background-color: $darker-midnight;  
             border: 1px solid $darker-midnight-shadow;
             box-shadow: 1px -1px 4px 1px $darker-midnight-shadow;
@@ -63,7 +63,7 @@
             box-shadow: 1px -1px 4px 1px $lighter-midnight;
         }
         
-        .button__operators:hover , .button__numbers:hover {
+        .button__operators:hover , .button__numbers:hover , .button__num-operators:hover {
             background-color: $burnt-orange;  
             border: 1px solid $burnt-orange;
             box-shadow: 1px -1px 4px 1px $burnt-orange;
@@ -79,7 +79,7 @@
     grid-row-start: 4;
     grid-row-end: 6;
 }
-#zero {
+.zero {
     grid-column-start:1;
     grid-column-end: 4;
     width: 100%;

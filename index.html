@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="./assets/js/script.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
 </head>
@@ -16,44 +17,44 @@
         <div id="calculator">
             <div id="calculator__screen">
 
-                <div id="calculator__screen__input">
-                    <h4>10*11+3</h4>
+                <div id="calculator__previous-operand">
+                    <h4 ></h4>
                 </div>
                 <div id="calculator__screen__result">
-                    <h1>113</h1>
+                    <h1  id="calculator__screen__result-text"></h1>
                 </div>
 
             </div>
 
             <div id="calculator__input">
 
-                <button class="button__operators">C</button>
-                <button class="button__operators">+/-</button>
-                <button class="button__operators">%</button>
-                <button class="button__operators">(</button>
-                <button class="button__operators">)</button>
+                <button id="C" class="button__operators"  onclick="addKey(event)">C</button>
+                <button id="plus-minus" class="button__num-operators" >+/-</button>
+                <button id="percent" class="button__operators"  >%</button>
+                <button id="(" class="button__num-operators"  onclick="addKey(event)">(</button>
+                <button id=")" class="button__num-operators"  onclick="addKey(event)">)</button>
 
-                <button class="button__numbers">1</button>
-                <button class="button__numbers">2</button>
-                <button class="button__numbers">3</button>
-                <button class="button__operators">x</button>
-                <button class="button__operators">÷</button> 
+                <button id="1" class="button__numbers"  onclick="addKey(event)"  >1</button>
+                <button id="2" class="button__numbers"  onclick="addKey(event)">2</button>
+                <button id="3" class="button__numbers"   onclick="addKey(event)">3</button>
+                <button id="*" class="button__operators"  onclick="addKey(event)" >x</button>
+                <button id="/" class="button__operators"  onclick="addKey(event)" >÷</button> 
 
 
-                <button class="button__numbers">4</button>
-                <button class="button__numbers">5</button>
-                <button class="button__numbers">6</button>
-                <button class="button__operators">+</button>
-                <button class="button__operators">-</button>
+                <button id="4" class="button__numbers"  onclick="addKey(event)">4</button>
+                <button id="5" class="button__numbers"  onclick="addKey(event)">5</button>
+                <button id="6" class="button__numbers"  onclick="addKey(event)">6</button>
+                <button id="+" class="button__operators"  onclick="addKey(event)" >+</button>
+                <button id="-" class="button__operators"  onclick="addKey(event)" >-</button>
 
-                <button class="button__numbers">7</button>
-                <button class="button__numbers">8</button>
-                <button class="button__numbers">9</button>
-                <button class="button__operators">.</button>
-                <button class="button__operators" id="equals">=</button>
+                <button id="7" class="button__numbers"  onclick="addKey(event)" >7</button>
+                <button id="8" class="button__numbers"  onclick="addKey(event)">8</button>
+                <button id="9" class="button__numbers"   onclick="addKey(event)">9</button>
+                <button id="." class="button__num-operators"  onclick="addKey(event)" >.</button>
+                <button id="equals" class="button__operators" onclick="calculate()">=</button>
 
-                <button class="button__numbers" id="zero">0</button>
-                <button class="button__operators">DEL</button>
+                <button id="0" class="button__numbers zero"  onclick="addKey(event)">0</button>
+                <button id="del" class="button__operators" onclick="addKey(event)">DEL</button>
                     
                     
                 </div>
