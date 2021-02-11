@@ -1,51 +1,89 @@
 /*--------------------------------------------------------------------------------------------
             1.  is first key a number or an operation
-                1. if key -> write into screen  // if operator do nothing
-
-            2.
-            3.
- ---------------------------------------------------------------------*/
+                --->   if key -> write into screen  // if operator do nothing
+ -----------------------------------------------------------------------------------------------*/
 
  const addKey = (e) => {
 
-    // gets the ID of a button
-    const clickedKey = e.target.id;  
+    // gets the ID of a button -> string
+    const clickedKey = e.target.id; 
+
+    // variables
     const resultScreen = document.getElementById("calculator__screen__result-text");
+    const smallerScreen = document.getElementById("calculator__previous-operand-text");
 
-    // CLEAR
+    // going for the first time    
+    if (resultScreen.innerText.length == 0){
 
-    if (clickedKey == "del") {
-        console.log("del");
-        clickedKey = clickedKey.toString().slice(0,-4);
-        resultScreen.innerHTML = resultScreen.innerHTML + clickedKey; 
+        console.log("I'm running for the first timeee")
+
+        if (clickedKey == "+" || clickedKey == "-" || clickedKey == "*" || clickedKey == "/") {
+            console.log("first key is an operand");
+            return;
+        }
+    }
+    
+    // CLEAR THE SCREEN
+
+    if (clickedKey == "d") {
+        resultScreen.innerHTML = resultScreen.innerText.slice(0,-1); 
         return;
     }
 
     if (clickedKey == "C") {
         console.log("clear");
-        resultScreen.innerHTML = ""
+        resultScreen.innerHTML = "";
+        smallerScreen.innerHTML = "";
         return;
     }
 
-    // current key will be displayed on the result screen
-    resultScreen.innerHTML = resultScreen.innerHTML + clickedKey;   
+    
+    // DISPLAY CLICKED KEY ON THE SCREEN
+
+        resultScreen.innerHTML = resultScreen.innerHTML + clickedKey;
+        console.log("result screen is now: " + resultScreen.innerText)
+
+
 } 
 
 
 const calculate = () => {
+    const smallerScreen = document.getElementById("calculator__previous-operand-text");
     const resultScreen = document.getElementById("calculator__screen__result-text");
     console.log(typeof(resultScreen.innerText))
 
     // OPERATIONS 
 
-    if (resultScreen.innerText.includes("+")) {
-        resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("+")[0]) + parseFloat(resultScreen.innerHTML.split("+")[1]);
-    } else if (resultScreen.innerText.includes("-")) {
-        resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("-")[0]) - parseFloat(resultScreen.innerHTML.split("-")[1]);
-    } else if (resultScreen.innerText.includes("*")) {
-        console.log(resultScreen.innerHTML.split("*")[0],resultScreen.innerHTML.split("*")[1]);
-        resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("*")[0]) * parseFloat(resultScreen.innerHTML.split("*")[1]);
-    } else if (resultScreen.innerText.includes("/")) {
-        resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("/")[0]) / parseFloat(resultScreen.innerHTML.split("/")[1]);
-    }
+        if (resultScreen.innerText.includes("+")) {
+            smallerScreen.innerHTML = resultScreen.innerText;
+            resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("+")[0]) + parseFloat(resultScreen.innerHTML.split("+")[1]);
+        
+        } else if (resultScreen.innerText.includes("-")) {
+            smallerScreen.innerHTML = resultScreen.innerText;
+            resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("-")[0]) - parseFloat(resultScreen.innerHTML.split("-")[1]);
+        
+        } else if (resultScreen.innerText.includes("*")) {
+            smallerScreen.innerHTML = resultScreen.innerText;
+            resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("*")[0]) * parseFloat(resultScreen.innerHTML.split("*")[1]);
+        
+        } else if (resultScreen.innerText.includes("/")) {
+            smallerScreen.innerHTML = resultScreen.innerText;
+            resultScreen.innerHTML = parseFloat(resultScreen.innerHTML.split("/")[0]) / parseFloat(resultScreen.innerHTML.split("/")[1]);
+        }
+    
+}
+
+const changePrefix = () => {
+    const resultScreen = document.getElementById("calculator__screen__result-text");
+    //const minus = "(-";
+
+    if (resultScreen.innerText.length == 0){
+        resultScreen.innerHTML = "-";
+    } 
+    
+    // else {
+    //     resultScreen.innerHTML = resultScreen.innerText.slice(0,-1) +  minus + resultScreen.innerText.charAt(resultScreen.innerText.length-1)
+    // }
+    
+
 }

@@ -18,7 +18,7 @@
             <div id="calculator__screen">
 
                 <div id="calculator__previous-operand">
-                    <h4 ></h4>
+                    <h4 id="calculator__previous-operand-text"></h4>
                 </div>
                 <div id="calculator__screen__result">
                     <h1  id="calculator__screen__result-text"></h1>
@@ -29,7 +29,7 @@
             <div id="calculator__input">
 
                 <button id="C" class="button__operators"  onclick="addKey(event)">C</button>
-                <button id="plus-minus" class="button__num-operators" >+/-</button>
+                <button id="plus-minus" class="button__num-operators" onclick="changePrefix()">+/-</button>
                 <button id="percent" class="button__operators"  >%</button>
                 <button id="(" class="button__num-operators"  onclick="addKey(event)">(</button>
                 <button id=")" class="button__num-operators"  onclick="addKey(event)">)</button>
@@ -54,7 +54,7 @@
                 <button id="equals" class="button__operators" onclick="calculate()">=</button>
 
                 <button id="0" class="button__numbers zero"  onclick="addKey(event)">0</button>
-                <button id="del" class="button__operators" onclick="addKey(event)">DEL</button>
+                <button id="d" class="button__operators" onclick="addKey(event)">DEL</button>
                     
                     
                 </div>
