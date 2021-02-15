@@ -40,3 +40,12 @@ h6,p {
 }
 
 button {font-family: $font;}
+
+@media only screen and (max-width:1025px) {
+    h1 {
+        font-size: $font-M;
+    }
+    h2 {
+        font-size: $font-S;
+    }
+}

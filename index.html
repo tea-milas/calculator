@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js" async defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
 </head>
@@ -30,15 +30,17 @@
 
                 <button id="C" class="button__operators"  onclick="addKey(event)">C</button>
                 <button id="plus-minus" class="button__num-operators" onclick="changePrefix()">+/-</button>
-                <button id="percent" class="button__operators"  >%</button>
-                <button id="(" class="button__num-operators"  onclick="addKey(event)">(</button>
-                <button id=")" class="button__num-operators"  onclick="addKey(event)">)</button>
+                <!-- <button id="%" class="button__operators" onclick="addKey(event)" >%</button> -->
+                <button id="(" class="button__num-operators">(</button>
+                <button id=")" class="button__num-operators">)</button>
+                
 
                 <button id="1" class="button__numbers"  onclick="addKey(event)"  >1</button>
                 <button id="2" class="button__numbers"  onclick="addKey(event)">2</button>
                 <button id="3" class="button__numbers"   onclick="addKey(event)">3</button>
                 <button id="*" class="button__operators"  onclick="addKey(event)" >x</button>
                 <button id="/" class="button__operators"  onclick="addKey(event)" >÷</button> 
+                
 
 
                 <button id="4" class="button__numbers"  onclick="addKey(event)">4</button>
@@ -46,6 +48,8 @@
                 <button id="6" class="button__numbers"  onclick="addKey(event)">6</button>
                 <button id="+" class="button__operators"  onclick="addKey(event)" >+</button>
                 <button id="-" class="button__operators"  onclick="addKey(event)" >-</button>
+                
+                
 
                 <button id="7" class="button__numbers"  onclick="addKey(event)" >7</button>
                 <button id="8" class="button__numbers"  onclick="addKey(event)">8</button>
@@ -57,10 +61,10 @@
                 <button id="d" class="button__operators" onclick="addKey(event)">DEL</button>
                     
                     
-                </div>
-
             </div>
+
         </div>
+       
 
         <div id="blob__background">
             <img id="blob1" class="blob" src="assets\svg\blob.svg">
@@ -72,6 +76,7 @@
             <img id="blob7" class="blob" src="assets\svg\blob(6).svg">
             <img id="blob8" class="blob" src="assets\svg\blob(7).svg">
         </div>
+
     </main>
 </body>
 </html>

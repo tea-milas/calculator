@@ -68,3 +68,50 @@
     to {transform: scale(1) translate(0,0);}
 
 }
+
+
+@media only screen and (max-width:1025px) {
+    #blob__background {
+        #blob1 {
+            height: 550px;
+            top: -20%;
+            left: -18%;
+        }
+        #blob2 {
+            height: 550px;
+            bottom: -30%;
+            right: 0;
+        }
+        #blob3 {
+            height: 200px;
+            top: 2%;
+            right: 12%;
+        }
+        #blob4 {
+            height: 450px;
+            bottom: -25%;
+            left: -5%;
+        }
+        #blob5 {
+            height: 220px;
+            top: 12%;
+            right: -12%;
+        }
+        #blob6 {
+            height: 300px;
+            top: 40%;
+            left: -5%;
+        }
+        #blob7 {
+            height: 250px;
+            top: 40%;
+            right: 0;
+        }
+        #blob8 {
+            height: 300px;
+            top: -5%;
+            left: 30%;
+        }
+    }
+   
+}

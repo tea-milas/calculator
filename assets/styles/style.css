@@ -24,6 +24,15 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 1025px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -50,6 +59,15 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 1025px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -88,6 +106,15 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 1025px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
 #calculator {
   position: relative;
   z-index: 10;
@@ -148,6 +175,11 @@ button {
   color: beige;
 }
 
+#C {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 #equals {
   grid-column-start: 5;
   grid-column-end: 6;
@@ -187,6 +219,15 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 1025px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+}
 #blob__background {
   z-index: 1;
   max-height: 97vh;
@@ -253,5 +294,47 @@ button {
   }
   to {
     transform: scale(1) translate(0, 0);
+  }
+}
+@media only screen and (max-width: 1025px) {
+  #blob__background #blob1 {
+    height: 550px;
+    top: -20%;
+    left: -18%;
+  }
+  #blob__background #blob2 {
+    height: 550px;
+    bottom: -30%;
+    right: 0;
+  }
+  #blob__background #blob3 {
+    height: 200px;
+    top: 2%;
+    right: 12%;
+  }
+  #blob__background #blob4 {
+    height: 450px;
+    bottom: -25%;
+    left: -5%;
+  }
+  #blob__background #blob5 {
+    height: 220px;
+    top: 12%;
+    right: -12%;
+  }
+  #blob__background #blob6 {
+    height: 300px;
+    top: 40%;
+    left: -5%;
+  }
+  #blob__background #blob7 {
+    height: 250px;
+    top: 40%;
+    right: 0;
+  }
+  #blob__background #blob8 {
+    height: 300px;
+    top: -5%;
+    left: 30%;
   }
 }
